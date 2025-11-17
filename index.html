@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>정지훈 | AI 튜터 포트폴리오</title>
-    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Inter Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
@@ -36,34 +34,27 @@
 </head>
 <body class="bg-gray-900 text-gray-200 font-sans antialiased">
 
-    <!-- Main Container -->
     <div class="container mx-auto max-w-5xl px-4 py-12 sm:py-16">
 
-        <!-- Header / Hero Section -->
         <header class="flex flex-col-reverse sm:flex-row items-center justify-between gap-8 sm:gap-16">
-            <!-- Intro Text -->
             <div class="flex-1 text-center sm:text-left">
                 <h1 class="text-4xl sm:text-5xl font-bold text-white">정지훈</h1>
                 <p class="mt-2 text-xl sm:text-2xl font-medium text-indigo-300">
                     컴퓨터소프트웨어공학과에 재학하며 꿈을 꾸는 느긋한 개발자
                 </p>
                 
-                <!-- Contact Links -->
                 <div class="mt-6 flex justify-center sm:justify-start space-x-4">
                     <a href="mailto:csans2644@gmail.com" class="inline-flex items-center gap-2 rounded-lg bg-indigo-600 px-4 py-2 text-sm font-medium text-white shadow-lg transition-transform duration-200 hover:bg-indigo-700 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-900">
-                        <!-- Email Icon -->
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
                         Email
                     </a>
                     <a href="https://github.com/Frost40I" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-lg bg-gray-700 px-4 py-2 text-sm font-medium text-white shadow-lg transition-transform duration-200 hover:bg-gray-600 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 focus:ring-offset-gray-900">
-                        <!-- GitHub Icon -->
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
                         GitHub
                     </a>
                 </div>
             </div>
             
-            <!-- Profile Image Placeholder -->
             <div class="flex-shrink-0">
                 <div class="h-40 w-40 rounded-full bg-gray-700 shadow-lg flex items-center justify-center text-gray-500 font-medium">
                     프로필 이미지
@@ -71,7 +62,6 @@
             </div>
         </header>
 
-        <!-- About Me Section -->
         <section class="mt-16 sm:mt-20">
             <h2 class="text-3xl font-bold text-white">About Me</h2>
             <div class="mt-4 rounded-lg bg-gray-800 p-6 sm:p-8 shadow-xl">
@@ -84,12 +74,10 @@
             </div>
         </section>
 
-        <!-- Skills Section -->
         <section class="mt-12 sm:mt-16">
             <h2 class="text-3xl font-bold text-white">기술 스택 (Skills)</h2>
             <div class="mt-4 rounded-lg bg-gray-800 p-6 sm:p-8 shadow-xl">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <!-- Frontend -->
                     <div>
                         <h3 class="text-lg font-semibold text-indigo-300">프론트엔드</h3>
                         <div class="mt-2 flex flex-wrap gap-2">
@@ -98,7 +86,6 @@
                             <span class="rounded-full bg-gray-700 px-3 py-1 text-sm font-medium text-blue-300">CSS</span>
                         </div>
                     </div>
-                    <!-- Backend -->
                     <div>
                         <h3 class="text-lg font-semibold text-indigo-300">백엔드</h3>
                         <div class="mt-2 flex flex-wrap gap-2">
@@ -107,7 +94,6 @@
                             <span class="rounded-full bg-gray-700 px-3 py-1 text-sm font-medium text-green-300">LangChain</span>
                         </div>
                     </div>
-                    <!-- AI & Data -->
                     <div>
                         <h3 class="text-lg font-semibold text-indigo-300">AI & Data</h3>
                         <div class="mt-2 flex flex-wrap gap-2">
@@ -116,7 +102,6 @@
                             <span class="rounded-full bg-gray-700 px-3 py-1 text-sm font-medium text-purple-300">PyMuPDF (PDF 처리)</span>
                         </div>
                     </div>
-                    <!-- DevOps & Tools -->
                     <div>
                         <h3 class="text-lg font-semibold text-indigo-300">Tools</h3>
                         <div class="mt-2 flex flex-wrap gap-2">
@@ -128,21 +113,17 @@
             </div>
         </section>
 
-        <!-- Project Section -->
         <section class="mt-12 sm:mt-16">
             <h2 class="text-3xl font-bold text-white">프로젝트 (Projects)</h2>
             
-            <!-- Project Card -->
             <div class="mt-4 rounded-lg bg-gray-800 shadow-xl overflow-hidden">
                 <div class="p-6 sm:p-8">
                     <h3 class="text-2xl font-bold text-white">나만의 AI 스승</h3>
                     
-                    <!-- Project Main Image Placeholder -->
-                    <div class="mt-4 h-64 w-full rounded-lg bg-gray-700 flex items-center justify-center text-gray-500 font-medium shadow-inner">
-                        프로젝트 메인 이미지
+                    <div class="mt-4 w-full rounded-lg bg-gray-700 flex items-center justify-center text-gray-500 font-medium shadow-inner">
+                        <img src="Main.png" alt="프로젝트 메인 이미지" class="w-full h-auto rounded-lg">
                     </div>
 
-                    <!-- Problem Definition -->
                     <div class="mt-6">
                         <h4 class="text-xl font-semibold text-indigo-300">문제 정의</h4>
                         <p class="mt-2 text-gray-300 leading-relaxed">
@@ -153,7 +134,6 @@
                         </p>
                     </div>
 
-                    <!-- Architecture / Design -->
                     <div class="mt-6">
                         <h4 class="text-xl font-semibold text-indigo-300">아키텍처 / 설계</h4>
                         <p class="mt-2 text-gray-300 leading-relaxed">
@@ -168,17 +148,14 @@
                         <p class="mt-4 text-gray-300 leading-relaxed">
                             백엔드 tutor_service는 이 mode 꼬리표를 받아, '대화 모드'일 경우 (C)일반 답변 체인만 실행하고, '시험 모드'일 경우에만 (A)퀴즈 생성 / (B)채점을 처리하는 내부 라우터가 동작하도록 재설계했습니다.
                         </p>
-                        <!-- Architecture Diagram Placeholder -->
-                        <div class="mt-4 h-64 w-full rounded-lg bg-gray-700 flex items-center justify-center text-gray-500 font-medium shadow-inner">
-                            아키텍처 다이어그램
+                        <div class="mt-4 w-full rounded-lg bg-gray-700 flex items-center justify-center text-gray-500 font-medium shadow-inner">
+                            <img src="아키텍처.png" alt="아키텍처 다이어그램" class="w-full h-auto rounded-lg">
                         </div>
                     </div>
 
-                    <!-- Key Features -->
                     <div class="mt-6">
                         <h4 class="text-xl font-semibold text-indigo-300">핵심 기능</h4>
                         <div class="mt-4 grid grid-cols-1 md:grid-cols-2 gap-6">
-                            <!-- Feature 1 -->
                             <div class="rounded-lg bg-gray-700/50 p-4">
                                 <h5 class="font-semibold text-white">UI-Driven 튜터링 모드 분리 (대화/시험)</h5>
                                 <p class="mt-2 text-sm text-gray-300 leading-relaxed">
@@ -189,12 +166,10 @@
                                     <li><strong>mode == 'chat' (대화 모드):</strong> 오직 '일반 답변 체인'(rag_chain)만 호출하여 설명과 퀴즈 제안을 수행합니다. 불필요한 채점/퀴즈 생성 로직을 건너뛰어 응답 속도를 최적화했습니다.</li>
                                     <li><strong>mode == 'test' (시험 모드):</strong> '일반 답변 체인'을 차단하고, '시험 모드' 전용 내부 라우터(규칙 기반)가 "퀴즈 요청"인지 "퀴즈 답변"인지를 판단하여 퀴즈 생성/채점/역질문 체인을 실행합니다.</li>
                                 </ul>
-                                <!-- Feature 1 Screenshot Placeholder -->
-                                <div class="mt-3 h-48 w-full rounded-lg bg-gray-600 flex items-center justify-center text-gray-400 text-sm font-medium shadow-inner">
-                                    핵심 기능 1 스크린샷
+                                <div class="mt-3 w-full rounded-lg bg-gray-600 flex items-center justify-center text-gray-400 text-sm font-medium shadow-inner">
+                                    <img src="backend.png" alt="핵심 기능 1 스크린샷" class="w-full h-auto rounded-lg">
                                 </div>
                             </div>
-                            <!-- Feature 2 -->
                             <div class="rounded-lg bg-gray-700/50 p-4">
                                 <h5 class="font-semibold text-white">역할-특화 프롬프트 체인 (5-Chains)</h5>
                                 <p class="mt-2 text-sm text-gray-300 leading-relaxed">
@@ -207,15 +182,13 @@
                                     <li><strong>소크라테스 체인 (시험 모드):</strong> 채점 결과가 incorrect일 때, 정답 대신 힌트성 역질문을 생성합니다.</li>
                                     <li><strong>정답 체인 (시험 모드):</strong> 채점 결과가 correct일 때, 사용자를 칭찬하고 내용을 요약합니다.</li>
                                 </ul>
-                                <!-- Feature 2 Screenshot Placeholder -->
-                                <div class="mt-3 h-48 w-full rounded-lg bg-gray-600 flex items-center justify-center text-gray-400 text-sm font-medium shadow-inner">
-                                    핵심 기능 2 스크린샷
+                                <div class="mt-3 w-full rounded-lg bg-gray-600 flex items-center justify-center text-gray-400 text-sm font-medium shadow-inner">
+                                    <img src="backend2.png" alt="핵심 기능 2 스크린샷" class="w-full h-auto rounded-lg">
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- My Role -->
                     <div class="mt-6">
                         <h4 class="text-xl font-semibold text-indigo-300">나의 역할 및 기여</h4>
                         <ul class="mt-2 list-disc list-inside space-y-1 text-gray-300 leading-relaxed">
@@ -227,7 +200,6 @@
                         </ul>
                     </div>
 
-                    <!-- Outcomes -->
                     <div class="mt-6">
                         <h4 class="text-xl font-semibold text-indigo-300">결과 및 성과</h4>
                         <ul class="mt-2 list-disc list-inside space-y-1 text-gray-300 leading-relaxed">
@@ -238,7 +210,6 @@
                         </ul>
                     </div>
 
-                    <!-- Retrospective -->
                     <div class="mt-6">
                         <h4 class="text-xl font-semibold text-indigo-300">회고 (Lessons Learned)</h4>
                         <div class="mt-4 rounded-lg bg-gray-900/50 p-4">
@@ -260,7 +231,6 @@
             </div>
         </section>
 
-        <!-- Footer -->
         <footer class="mt-16 border-t border-gray-700 pt-8 text-center text-gray-500">
             <p>&copy; 2024 정지훈. All rights reserved.</p>
         </footer>
