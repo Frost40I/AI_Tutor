@@ -27,6 +27,11 @@
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
         }
+        /* 강조 표시를 위한 스타일 */
+        strong, b {
+            color: #f3f3f3; /* 더 밝은 흰색 */
+            font-weight: 600;
+        }
     </style>
 </head>
 <body class="bg-gray-900 text-gray-200 font-sans antialiased">
@@ -71,10 +76,10 @@
             <h2 class="text-3xl font-bold text-white">About Me</h2>
             <div class="mt-4 rounded-lg bg-gray-800 p-6 sm:p-8 shadow-xl">
                 <p class="text-gray-300 leading-relaxed">
-                    저는 일상속 다양한 문제를 관찰하는 것에 흥미를 느끼는 개발자입니다. 친구가 없는 저는 ChatGPT을 접하며 AI가 이를 완벽히 대체할 수는 없어도 빈 부분을 매우는 것이 가능하다 생각하게 되었고 그러한 존재가 될 수 있는 AI에 대해 많은 관심을 가져 왔고 많은 대화형 인공지능, 페르소나 챗봇 사이트를 접해왔습니다.
+                    저는 일상 속 다양한 문제를 관찰하는 것에 흥미를 느끼는 개발자입니다. ChatGPT를 접하며 AI가 사람의 빈 부분을 메울 수 있다고 생각하게 되었고, 대화형 인공지능과 페르소나 챗봇에 많은 관심을 가져왔습니다.
                 </p>
                 <p class="mt-4 text-gray-300 leading-relaxed">
-                    이번 AI 튜터 프로젝트는 친구가 없거나 다른사람과 있는 것이 불편한 사람들에게 다른 사람들과 비슷한 경험을 주기 위해 기획되었습니다. 이 프로젝트로 혼자하는 공부와 모두와 하는 공부 간의 격차를 줄이고자 합니다.
+                    이번 AI 튜터 프로젝트는 혼자 공부하는 사람들이 겪는 외로움이나 정보 접근의 한계를 해소하고, 여러 명이 함께 공부할 때의 시너지를 제공하기 위해 기획되었습니다. 이 프로젝트로 혼자 하는 공부와 모두와 하는 공부 간의 격차를 줄이고자 합니다.
                 </p>
             </div>
         </section>
@@ -90,7 +95,7 @@
                         <div class="mt-2 flex flex-wrap gap-2">
                             <span class="rounded-full bg-gray-700 px-3 py-1 text-sm font-medium text-blue-300">JavaScript</span>
                             <span class="rounded-full bg-gray-700 px-3 py-1 text-sm font-medium text-blue-300">React</span>
-                            <span class="rounded-full bg-gray-700 px-3 py-1 text-sm font-medium text-blue-300">Tailwind CSS</span>
+                            <span class="rounded-full bg-gray-700 px-3 py-1 text-sm font-medium text-blue-300">CSS</span>
                         </div>
                     </div>
                     <!-- Backend -->
@@ -106,18 +111,17 @@
                     <div>
                         <h3 class="text-lg font-semibold text-indigo-300">AI & Data</h3>
                         <div class="mt-2 flex flex-wrap gap-2">
-                            <span class="rounded-full bg-gray-700 px-3 py-1 text-sm font-medium text-purple-300">Ollama</span>
-                            <span class="rounded-full bg-gray-700 px-3 py-1 text-sm font-medium text-purple-300">ChromaDB</span>
-                            <span class="rounded-full bg-gray-700 px-3 py-1 text-sm font-medium text-purple-300">PyMuPDF</span>
+                            <span class="rounded-full bg-gray-700 px-3 py-1 text-sm font-medium text-purple-300">Ollama (gemma3:12b, nomic-embed-text)</span>
+                            <span class="rounded-full bg-gray-700 px-3 py-1 text-sm font-medium text-purple-300">ChromaDB (Vector Store)</span>
+                            <span class="rounded-full bg-gray-700 px-3 py-1 text-sm font-medium text-purple-300">PyMuPDF (PDF 처리)</span>
                         </div>
                     </div>
                     <!-- DevOps & Tools -->
                     <div>
-                        <h3 class="text-lg font-semibold text-indigo-300">DevOps & Tools</h3>
+                        <h3 class="text-lg font-semibold text-indigo-300">Tools</h3>
                         <div class="mt-2 flex flex-wrap gap-2">
                             <span class="rounded-full bg-gray-700 px-3 py-1 text-sm font-medium text-red-300">Git</span>
-                            <span class="rounded-full bg-gray-700 px-3 py-1 text-sm font-medium text-red-300">Docker</span>
-                            <span class="rounded-full bg-gray-700 px-3 py-1 text-sm font-medium text-red-300">Docker Compose</span>
+                            <span class="rounded-full bg-gray-700 px-3 py-1 text-sm font-medium text-red-300">Visual Studio Code</span>
                         </div>
                     </div>
                 </div>
@@ -142,10 +146,10 @@
                     <div class="mt-6">
                         <h4 class="text-xl font-semibold text-indigo-300">문제 정의</h4>
                         <p class="mt-2 text-gray-300 leading-relaxed">
-                            학생들이 학습을 할 때 때론 혼자 하는 것 보다는 친구들 여럿이 모여 하는 것이 더 효과적이기도 합니다.
-                            하지만 모두에게 친구가 있는 것은 아니고 설령 친구가 있더라도 성격적 이유로 모여서 하는 공부가 더 불편하다 여기는 사람도 있습니다.
-                            저는 혼자서도 공부할 때 친구와 함께 공부한다는 느낌을 주고, 같이 공부를 할 때의 효과를 볼 수 있게 하고자 하는 것이 목표였습니다.
-                            하지만 기존 PDF 읽기 기반 챗봇은 상당히 딱딱한 말투를 기본으로 하고 있으며 질문을 하면 '답'을 내놓아 사용자의 학습에는 도움을 주지 않는다고 생각하게 되었습니다.
+                            학생들이 학습할 때, 때로는 혼자 하는 것보다 여럿이 모여 서로 질문하고 문제를 내주는 것이 더 효과적입니다. 하지만 성격적 이유나 환경적 요인으로 인해 그룹 스터디가 불편하거나 불가능한 사람들도 많습니다.
+                        </p>
+                        <p class="mt-4 text-gray-300 leading-relaxed">
+                            기존 PDF 기반 챗봇은 대부분 딱딱한 말투로 '정답'만 즉시 알려주기 때문에, 사용자가 스스로 생각하는 과정을 방해하여 능동적인 학습에 도움을 주지 못하는 문제가 있었습니다.
                         </p>
                     </div>
 
@@ -153,8 +157,16 @@
                     <div class="mt-6">
                         <h4 class="text-xl font-semibold text-indigo-300">아키텍처 / 설계</h4>
                         <p class="mt-2 text-gray-300 leading-relaxed">
-                            핵심 전략으로 RAG(Retrieval-Augmented Generation) 아키텍처를 채택했습니다. 데이터 프라이버시와 비용 효율성을 위해 외부 API 대신 Ollama를 사용하여 로컬 LLM(exaone3.5:2.4b)을 구동했습니다. 백엔드는 Python FastAPI를 기반으로 비동기 API 서버를 구축했습니다.
-                            사용자가 업로드한 PDF는 텍스트로 변환 및 분할(Chunking)되어 ChromaDB 벡터 저장소에 임베딩됩니다. 단순 Q&A를 넘어선 튜터링 기능을 위해, 대화 상태 관리(State Management) 로직을 tutor_service에 집중시켜 사용자의 상태(예: ANSWERED_WRONG, HINT_REQUESTED)를 추론하고 반응을 동적으로 결정하도록 설계했습니다.
+                            핵심 전략으로 RAG(Retrieval-Augmented Generation) 아키텍처를 채택했습니다. 비용과 프라이버시를 위해 Ollama를 사용하여 <strong>gemma3:12b (채팅/추론)</strong>와 <strong>nomic-embed-text (임베딩)</strong>의 '듀얼 모델' 아키텍처를 설계했습니다.
+                        </p>
+                        <p class="mt-4 text-gray-300 leading-relaxed">
+                            초기 버전에서는 AI가 사용자의 의도(일반 질문/퀴즈 요청/퀴즈 답변)를 '추측'하도록 설계했으나, "답은 뇌물"을 "퀴즈 요청"으로 오인하는 등 '의도 분류'의 치명적인 버그와 느린 속도를 확인했습니다.
+                        </p>
+                        <p class="mt-4 text-gray-300 leading-relaxed">
+                            이 문제를 근본적으로 해결하기 위해, AI가 의도를 추측하는 방식 자체를 폐기했습니다. 대신, 사용자가 UI에서 "대화 모드" / "시험 모드" 버튼을 직접 선택하여 자신의 '의도(State)'를 명시적으로 시스템에 전달하는 <strong>'UI-Driven State Management'</strong> 아키텍처를 채택했습니다.
+                        </p>
+                        <p class="mt-4 text-gray-300 leading-relaxed">
+                            백엔드 tutor_service는 이 mode 꼬리표를 받아, '대화 모드'일 경우 (C)일반 답변 체인만 실행하고, '시험 모드'일 경우에만 (A)퀴즈 생성 / (B)채점을 처리하는 내부 라우터가 동작하도록 재설계했습니다.
                         </p>
                         <!-- Architecture Diagram Placeholder -->
                         <div class="mt-4 h-64 w-full rounded-lg bg-gray-700 flex items-center justify-center text-gray-500 font-medium shadow-inner">
@@ -168,12 +180,15 @@
                         <div class="mt-4 grid grid-cols-1 md:grid-cols-2 gap-6">
                             <!-- Feature 1 -->
                             <div class="rounded-lg bg-gray-700/50 p-4">
-                                <h5 class="font-semibold text-white">동적 튜터링 엔진 및 대화 상태 관리</h5>
+                                <h5 class="font-semibold text-white">UI-Driven 튜터링 모드 분리 (대화/시험)</h5>
                                 <p class="mt-2 text-sm text-gray-300 leading-relaxed">
-                                    사용자의 모든 대화 기록(Chat History)을 프론트엔드에서 받아, 백엔드의 '상태 관리자'가 현재 대화의 **'상태'**를 실시간으로 분석했습니다.
-                                    ANSWERED_WRONG 상태에서는 '채점' 대신 '소크라테스식 역질문'을 생성하도록, ANSWERED_CORRECT 상태에서는 '칭찬 및 요약'과 '다음 학습 제안'을 하도록 동적 프롬프트 빌더(Prompt Builder)를 구현했습니다.
-                                    이를 통해 LLM이 고정된 응답이 아닌, 튜터의 페르소나(예: 친근한 선배)와 현재 학습 맥락에 맞는 지능적인 대화(역질문, 힌트 제공, 채점, 격려)를 수행하도록 했습니다.
+                                    AI가 사용자의 의도를 추측하다 발생하는 모든 버그를 원천 차단하기 위해, React의 useState를 사용해 'chat'/'test' 모드를 관리하고, 이 mode 값을 모든 API 요청(ChatRequest DTO)에 포함시켰습니다.
+                                    FastAPI 백엔드는 이 mode 값을 최우선으로 확인합니다.
                                 </p>
+                                <ul class="mt-2 list-disc list-inside space-y-1 text-sm text-gray-300 pl-4 bg-gray-800 p-3 rounded-md">
+                                    <li><strong>mode == 'chat' (대화 모드):</strong> 오직 '일반 답변 체인'(rag_chain)만 호출하여 설명과 퀴즈 제안을 수행합니다. 불필요한 채점/퀴즈 생성 로직을 건너뛰어 응답 속도를 최적화했습니다.</li>
+                                    <li><strong>mode == 'test' (시험 모드):</strong> '일반 답변 체인'을 차단하고, '시험 모드' 전용 내부 라우터(규칙 기반)가 "퀴즈 요청"인지 "퀴즈 답변"인지를 판단하여 퀴즈 생성/채점/역질문 체인을 실행합니다.</li>
+                                </ul>
                                 <!-- Feature 1 Screenshot Placeholder -->
                                 <div class="mt-3 h-48 w-full rounded-lg bg-gray-600 flex items-center justify-center text-gray-400 text-sm font-medium shadow-inner">
                                     핵심 기능 1 스크린샷
@@ -181,11 +196,17 @@
                             </div>
                             <!-- Feature 2 -->
                             <div class="rounded-lg bg-gray-700/50 p-4">
-                                <h5 class="font-semibold text-white">대화 맥락을 인지하는 RAG 파이프라인</h5>
+                                <h5 class="font-semibold text-white">역할-특화 프롬프트 체인 (5-Chains)</h5>
                                 <p class="mt-2 text-sm text-gray-300 leading-relaxed">
-                                    사용자의 "왜?" 또는 "그럼 그건 뭐야?" 같은 짧은 후속 질문을 처리하기 위해 '검색어 재구성(Query Rewriting)' 로직을 도입했습니다. Vector DB를 검색하기 전, LLM이 전체 대화 맥락을 바탕으로 모호한 질문을 "([이전 주제]가 왜 중요한가?)"와 같이 구체적인 검색어로 변환하도록 했습니다.
-                                    이렇게 재구성된 검색어를 ChromaDB에 질의함으로써, 대화의 맥락에 정확히 부합하는 PDF 원문(컨텍스트)을 검색(Retrieve)하여 LLM에 제공, 응답의 정확성과 관련성을 극대화했습니다.
+                                    '모드 분리' 아키텍처 하에서, 각자의 역할에 최적화된 5개의 전문 LangChain 체인을 프롬프트 엔지니어링으로 구현했습니다.
                                 </p>
+                                <ul class="mt-2 list-disc list-inside space-y-1 text-sm text-gray-300 pl-4">
+                                    <li><strong>일반 답변 체인 (대화 모드):</strong> 답변 후 "'시험 모드'에서 퀴즈를 풀어보시겠어요?"라고 제안합니다.</li>
+                                    <li><strong>퀴즈 생성 체인 (시험 모드):</strong> [!!절대 지시!!] 프롬프트를 사용해 '예시 답안'이나 '정답'을 절대 유출하지 않고 질문만 생성하도록 강제했습니다.</li>
+                                    <li><strong>채점 체인 (시험 모드):</strong> correct / incorrect 단어만 출력하도록 template_grading을 설계하고, parse_grade 함수로 Python단에서 한 번 더 파싱하여 if grade == "correct": 로직의 안정성을 확보했습니다.</li>
+                                    <li><strong>소크라테스 체인 (시험 모드):</strong> 채점 결과가 incorrect일 때, 정답 대신 힌트성 역질문을 생성합니다.</li>
+                                    <li><strong>정답 체인 (시험 모드):</strong> 채점 결과가 correct일 때, 사용자를 칭찬하고 내용을 요약합니다.</li>
+                                </ul>
                                 <!-- Feature 2 Screenshot Placeholder -->
                                 <div class="mt-3 h-48 w-full rounded-lg bg-gray-600 flex items-center justify-center text-gray-400 text-sm font-medium shadow-inner">
                                     핵심 기능 2 스크린샷
@@ -199,9 +220,10 @@
                         <h4 class="text-xl font-semibold text-indigo-300">나의 역할 및 기여</h4>
                         <ul class="mt-2 list-disc list-inside space-y-1 text-gray-300 leading-relaxed">
                             <li>Python FastAPI 및 RAG 기반 백엔드 아키텍처 전체 설계</li>
-                            <li>Ollama 로컬 LLM 연동 및 LangChain을 활용한 RAG 파이프라인 구축 (PDF 파싱, 임베딩, ChromaDB 저장)</li>
-                            <li>React 기반 프론트엔드와 통신할 REST API 엔드포인트 설계</li>
-                            <li>핵심 로직인 대화 상태 관리자 및 동적 프롬프트 빌더 구현 (소크라테스식 질문, 단계별 힌트, 채점 로직)</li>
+                            <li>React 프론트엔드 UI(파일 업로드, 채팅창, 모드 버튼) 개발 및 FastAPI API 연동</li>
+                            <li>'AI 의도 분류'의 근본적 한계(속도, 버그)를 파악하고, React의 useState와 FastAPI의 mode 인자를 연동하는 <strong>'UI-Driven State Management'</strong> 아키텍처를 도입하여 문제 해결</li>
+                            <li><strong>'듀얼 모델'</strong> 아키텍처 설계 (채팅용 gemma3:12b, 임베딩용 nomic-embed-text)를 통해 'embeddings' 오류 해결</li>
+                            <li>'시험 모드' 내부에서 작동하는 5-Chain(답변, 퀴즈, 채점, 정답, 역질문) 프롬프트 엔지니어링 및 안정적인 파싱 로직(parse_grade) 구현</li>
                         </ul>
                     </div>
 
@@ -210,8 +232,9 @@
                         <h4 class="text-xl font-semibold text-indigo-300">결과 및 성과</h4>
                         <ul class="mt-2 list-disc list-inside space-y-1 text-gray-300 leading-relaxed">
                             <li>정적인 PDF 문서를 상호작용이 가능한 지능형 학습 교재로 성공적으로 변환.</li>
-                            <li>사용자의 오답 시 즉각적인 정답 제시가 아닌, '역질문'과 '단계별 힌트'를 제공하여 사용자의 능동적인 사고를 유도하는 튜터링 시스템 구축.</li>
-                            <li>모든 LLM 추론과 데이터 처리를 로컬(Ollama, ChromaDB)에서 수행하여, 완전한 데이터 프라이버시를 보장하는 AI 애플리케이션을 구현함.</li>
+                            <li>AI가 사용자의 의도를 '추측'하는 로직을 완전히 제거하고, UI로 '모드'를 명시적으로 받아 처리함으로써 '채점'과 '퀴즈 생성'이 섞이던 치명적인 버그를 100% 해결하고 시스템 안정성을 확보함.</li>
+                            <li>'대화 모드'에서는 불필요한 라우팅 로직을 건너뛰게 하여, 로컬 LLM 환경임에도 '일반 질문'의 응답 속도를 최적화함.</li>
+                            <li>모든 LLM 추론과 데이터 처리를 로컬(Ollama)에서 수행하여, 완전한 데이터 프라이버시를 보장하는 AI 애플리케이션을 구현함.</li>
                         </ul>
                     </div>
 
@@ -221,15 +244,16 @@
                         <div class="mt-4 rounded-lg bg-gray-900/50 p-4">
                             <h5 class="font-semibold text-white">배운 점</h5>
                             <ul class="mt-2 list-disc list-inside space-y-1 text-sm text-gray-300 leading-relaxed">
-                                <li>단순한 RAG를 넘어 '대화형 RAG'를 구현하기 위해서는 대화 맥락 기반의 검색어 재구성이 필수적임을 깨달았습니다.</li>
-                                <li>LLM을 활용한 지능형 봇 설계 시, 대화 상태 관리와 동적 프롬프트 엔지니어링이 튜터의 페르소나와 지능을 결정하는 가장 중요한 요소임을 깊이 이해했습니다.</li>
+                                <li>AI에게 사용자의 '의도'를 <strong>추측(Implicit Intent)</strong>하게 맡기는 것은 (모델 성능과 프롬프트에 상관없이) 본질적으로 불안정함을 깨달았습니다.</li>
+                                <li>사용자가 자신의 의도를 명확히 아는 경우(대화/시험), <strong>UI(버튼)를 통해 '명시적 상태(Explicit State)'</strong>를 직접 전달받아 백엔드 로직을 분기하는 것이 가장 빠르고, 안정적이며, 견고한 설계임을 깊이 이해했습니다.</li>
                             </ul>
                         </div>
                         <div class="mt-4 rounded-lg bg-gray-900/50 p-4">
                             <h5 class="font-semibold text-white">개선점</h5>
-                            <p class="mt-2 text-sm text-gray-300 leading-relaxed">
-                                PDF 내의 표(Table)나 이미지(Image)를 인식하지 못하는 한계가 있어 이를 멀티모달(Multi-modal) 임베딩을 사용해 개선하고 싶습니다.
-                            </p>
+                            <ul class="mt-2 list-disc list-inside space-y-1 text-sm text-gray-300 leading-relaxed">
+                                <li>현재 대화 기록이 브라우저 새로고침 시 초기화됩니다. <strong>localStorage</strong>를 도입하여 대화 기록을 브라우저에 영구 저장하고 싶습니다.</li>
+                                <li>PDF 내의 표(Table)나 이미지(Image)를 인식하지 못하는 한계가 있어, 향후 멀티모달(Multi-modal) 임베딩을 도입하여 RAG의 검색 범위를 확장하고 싶습니다.</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
