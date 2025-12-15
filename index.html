@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>정지훈 | AI 튜터 포트폴리오</title>
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Inter Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
@@ -34,27 +36,34 @@
 </head>
 <body class="bg-gray-900 text-gray-200 font-sans antialiased">
 
+    <!-- Main Container -->
     <div class="container mx-auto max-w-5xl px-4 py-12 sm:py-16">
 
+        <!-- Header / Hero Section -->
         <header class="flex flex-col-reverse sm:flex-row items-center justify-between gap-8 sm:gap-16">
+            <!-- Intro Text -->
             <div class="flex-1 text-center sm:text-left">
                 <h1 class="text-4xl sm:text-5xl font-bold text-white">정지훈</h1>
                 <p class="mt-2 text-xl sm:text-2xl font-medium text-indigo-300">
                     컴퓨터소프트웨어공학과에 재학하며 꿈을 꾸는 느긋한 개발자
                 </p>
                 
+                <!-- Contact Links -->
                 <div class="mt-6 flex justify-center sm:justify-start space-x-4">
                     <a href="mailto:csans2644@gmail.com" class="inline-flex items-center gap-2 rounded-lg bg-indigo-600 px-4 py-2 text-sm font-medium text-white shadow-lg transition-transform duration-200 hover:bg-indigo-700 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-900">
+                        <!-- Email Icon -->
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
                         Email
                     </a>
                     <a href="https://github.com/Frost40I" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-lg bg-gray-700 px-4 py-2 text-sm font-medium text-white shadow-lg transition-transform duration-200 hover:bg-gray-600 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 focus:ring-offset-gray-900">
+                        <!-- GitHub Icon -->
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
                         GitHub
                     </a>
                 </div>
             </div>
             
+            <!-- Profile Image Placeholder -->
             <div class="flex-shrink-0">
                 <div class="h-40 w-40 rounded-full bg-gray-700 shadow-lg flex items-center justify-center text-gray-500 font-medium">
                     프로필 이미지
@@ -62,6 +71,7 @@
             </div>
         </header>
 
+        <!-- About Me Section -->
         <section class="mt-16 sm:mt-20">
             <h2 class="text-3xl font-bold text-white">About Me</h2>
             <div class="mt-4 rounded-lg bg-gray-800 p-6 sm:p-8 shadow-xl">
@@ -74,18 +84,21 @@
             </div>
         </section>
 
+        <!-- Skills Section -->
         <section class="mt-12 sm:mt-16">
             <h2 class="text-3xl font-bold text-white">기술 스택 (Skills)</h2>
             <div class="mt-4 rounded-lg bg-gray-800 p-6 sm:p-8 shadow-xl">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Frontend -->
                     <div>
                         <h3 class="text-lg font-semibold text-indigo-300">프론트엔드</h3>
                         <div class="mt-2 flex flex-wrap gap-2">
                             <span class="rounded-full bg-gray-700 px-3 py-1 text-sm font-medium text-blue-300">JavaScript</span>
                             <span class="rounded-full bg-gray-700 px-3 py-1 text-sm font-medium text-blue-300">React</span>
-                            <span class="rounded-full bg-gray-700 px-3 py-1 text-sm font-medium text-blue-300">CSS</span>
+                            <span class="rounded-full bg-gray-700 px-3 py-1 text-sm font-medium text-blue-300">Tailwind CSS</span>
                         </div>
                     </div>
+                    <!-- Backend -->
                     <div>
                         <h3 class="text-lg font-semibold text-indigo-300">백엔드</h3>
                         <div class="mt-2 flex flex-wrap gap-2">
@@ -94,14 +107,17 @@
                             <span class="rounded-full bg-gray-700 px-3 py-1 text-sm font-medium text-green-300">LangChain</span>
                         </div>
                     </div>
+                    <!-- AI & Data -->
                     <div>
                         <h3 class="text-lg font-semibold text-indigo-300">AI & Data</h3>
                         <div class="mt-2 flex flex-wrap gap-2">
-                            <span class="rounded-full bg-gray-700 px-3 py-1 text-sm font-medium text-purple-300">Ollama (gemma3:12b, nomic-embed-text)</span>
+                            <!-- Model Updated to gemma3:4b -->
+                            <span class="rounded-full bg-gray-700 px-3 py-1 text-sm font-medium text-purple-300">Ollama (gemma3:4b, nomic-embed-text)</span>
                             <span class="rounded-full bg-gray-700 px-3 py-1 text-sm font-medium text-purple-300">ChromaDB (Vector Store)</span>
                             <span class="rounded-full bg-gray-700 px-3 py-1 text-sm font-medium text-purple-300">PyMuPDF (PDF 처리)</span>
                         </div>
                     </div>
+                    <!-- DevOps & Tools -->
                     <div>
                         <h3 class="text-lg font-semibold text-indigo-300">Tools</h3>
                         <div class="mt-2 flex flex-wrap gap-2">
@@ -113,117 +129,141 @@
             </div>
         </section>
 
+        <!-- Project Section -->
         <section class="mt-12 sm:mt-16">
             <h2 class="text-3xl font-bold text-white">프로젝트 (Projects)</h2>
             
+            <!-- Project Card -->
             <div class="mt-4 rounded-lg bg-gray-800 shadow-xl overflow-hidden">
                 <div class="p-6 sm:p-8">
                     <h3 class="text-2xl font-bold text-white">나만의 AI 스승</h3>
                     
-                    <div class="mt-4 w-full rounded-lg bg-gray-700 flex items-center justify-center text-gray-500 font-medium shadow-inner">
-                        <img src="Main.png" alt="프로젝트 메인 이미지" class="w-full h-auto rounded-lg">
+                    <!-- Project Main Image Placeholder -->
+                    <div class="mt-4 h-64 w-full rounded-lg bg-gray-700 flex items-center justify-center text-gray-500 font-medium shadow-inner">
+                        프로젝트 메인 이미지
                     </div>
 
+                    <!-- Problem Definition -->
                     <div class="mt-6">
                         <h4 class="text-xl font-semibold text-indigo-300">문제 정의</h4>
                         <p class="mt-2 text-gray-300 leading-relaxed">
                             학생들이 학습할 때, 때로는 혼자 하는 것보다 여럿이 모여 서로 질문하고 문제를 내주는 것이 더 효과적입니다. 하지만 성격적 이유나 환경적 요인으로 인해 그룹 스터디가 불편하거나 불가능한 사람들도 많습니다.
                         </p>
                         <p class="mt-4 text-gray-300 leading-relaxed">
-                            기존 PDF 기반 챗봇은 대부분 딱딱한 말투로 '정답'만 즉시 알려주기 때문에, 사용자가 스스로 생각하는 과정을 방해하여 능동적인 학습에 도움을 주지 못하는 문제가 있었습니다.
+                            기존 PDF 기반 챗봇은 단순히 정보를 찾아주는 것에 그쳐, 사용자의 능동적인 학습과 암기를 돕는 데에는 한계가 있었습니다.
                         </p>
                     </div>
 
+                    <!-- Architecture / Design -->
                     <div class="mt-6">
                         <h4 class="text-xl font-semibold text-indigo-300">아키텍처 / 설계</h4>
                         <p class="mt-2 text-gray-300 leading-relaxed">
-                            핵심 전략으로 RAG(Retrieval-Augmented Generation) 아키텍처를 채택했습니다. 비용과 프라이버시를 위해 Ollama를 사용하여 <strong>gemma3:12b (채팅/추론)</strong>와 <strong>nomic-embed-text (임베딩)</strong>의 '듀얼 모델' 아키텍처를 설계했습니다.
+                            핵심 전략으로 RAG(Retrieval-Augmented Generation) 아키텍처를 채택했습니다. 비용 효율성과 경량화를 위해 Ollama를 사용하여 <strong>gemma3:4b (채팅/추론)</strong>와 <strong>nomic-embed-text (임베딩)</strong>의 '듀얼 모델' 구조를 설계했습니다.
                         </p>
                         <p class="mt-4 text-gray-300 leading-relaxed">
-                            초기 버전에서는 AI가 사용자의 의도(일반 질문/퀴즈 요청/퀴즈 답변)를 '추측'하도록 설계했으나, "답은 뇌물"을 "퀴즈 요청"으로 오인하는 등 '의도 분류'의 치명적인 버그와 느린 속도를 확인했습니다.
+                            초기에는 규칙 기반 처리를 고려했으나, 사용자의 다양한 발화 패턴과 맥락을 유연하게 처리하기 위해 <strong>'AI 의도 파악(Intent Recognition)'</strong> 방식으로 고도화했습니다. AI가 사용자의 입력이 단순 대화인지, 학습 관련 질문인지, 특정 기능 요청인지를 파악하여 적절한 처리 흐름으로 연결합니다.
                         </p>
                         <p class="mt-4 text-gray-300 leading-relaxed">
-                            이 문제를 근본적으로 해결하기 위해, AI가 의도를 추측하는 방식 자체를 폐기했습니다. 대신, 사용자가 UI에서 "대화 모드" / "시험 모드" 버튼을 직접 선택하여 자신의 '의도(State)'를 명시적으로 시스템에 전달하는 <strong>'UI-Driven State Management'</strong> 아키텍처를 채택했습니다.
+                            또한, 단순한 문답을 넘어 <strong>'모의 시험'</strong>과 <strong>'암기 카드'</strong> 기능을 별도의 모듈로 구현하여, PDF 내용을 바탕으로 능동적인 학습 경험을 제공하도록 설계했습니다.
                         </p>
-                        <p class="mt-4 text-gray-300 leading-relaxed">
-                            백엔드 tutor_service는 이 mode 꼬리표를 받아, '대화 모드'일 경우 (C)일반 답변 체인만 실행하고, '시험 모드'일 경우에만 (A)퀴즈 생성 / (B)채점을 처리하는 내부 라우터가 동작하도록 재설계했습니다.
-                        </p>
-                        <div class="mt-4 w-full rounded-lg bg-gray-700 flex items-center justify-center text-gray-500 font-medium shadow-inner">
-                            <img src="아키텍쳐.png" alt="아키텍처 다이어그램" class="w-full h-auto rounded-lg">
+                        <!-- Architecture Diagram Placeholder -->
+                        <div class="mt-4 h-64 w-full rounded-lg bg-gray-700 flex items-center justify-center text-gray-500 font-medium shadow-inner">
+                             <img src="아키텍쳐.png" alt="아키텍처 다이어그램" class="w-full h-auto rounded-lg">
                         </div>
                     </div>
 
+                    <!-- Key Features -->
                     <div class="mt-6">
                         <h4 class="text-xl font-semibold text-indigo-300">핵심 기능</h4>
-                        <div class="mt-4 grid grid-cols-1 md:grid-cols-2 gap-6">
-                            <div class="rounded-lg bg-gray-700/50 p-4">
-                                <h5 class="font-semibold text-white">UI-Driven 튜터링 모드 분리 (대화/시험)</h5>
-                                <p class="mt-2 text-sm text-gray-300 leading-relaxed">
-                                    AI가 사용자의 의도를 추측하다 발생하는 모든 버그를 원천 차단하기 위해, React의 useState를 사용해 'chat'/'test' 모드를 관리하고, 이 mode 값을 모든 API 요청(ChatRequest DTO)에 포함시켰습니다.
-                                    FastAPI 백엔드는 이 mode 값을 최우선으로 확인합니다.
+                        
+                        <div class="mt-6 grid grid-cols-1 gap-8">
+                            
+                            <!-- Feature 1: Chat & Intent Recognition -->
+                            <div class="rounded-lg bg-gray-700/50 p-6">
+                                <h5 class="text-lg font-semibold text-white mb-2">1. 의도 파악 기반 튜터링 (Intent-Based Chat)</h5>
+                                <p class="text-sm text-gray-300 leading-relaxed mb-4">
+                                    기존의 딱딱한 규칙 기반 처리에서 벗어나, AI가 사용자의 대화 맥락과 의도를 파악합니다. 단순한 질문 답변뿐만 아니라, 사용자의 학습 수준에 맞춘 설명과 가이드를 제공합니다.
                                 </p>
-                                <ul class="mt-2 list-disc list-inside space-y-1 text-sm text-gray-300 pl-4 bg-gray-800 p-3 rounded-md">
-                                    <li><strong>mode == 'chat' (대화 모드):</strong> 오직 '일반 답변 체인'(rag_chain)만 호출하여 설명과 퀴즈 제안을 수행합니다. 불필요한 채점/퀴즈 생성 로직을 건너뛰어 응답 속도를 최적화했습니다.</li>
-                                    <li><strong>mode == 'test' (시험 모드):</strong> '일반 답변 체인'을 차단하고, '시험 모드' 전용 내부 라우터(규칙 기반)가 "퀴즈 요청"인지 "퀴즈 답변"인지를 판단하여 퀴즈 생성/채점/역질문 체인을 실행합니다.</li>
-                                </ul>
-                                <div class="mt-3 w-full rounded-lg bg-gray-600 flex items-center justify-center text-gray-400 text-sm font-medium shadow-inner">
-                                    <img src="backend.png" alt="핵심 기능 1 스크린샷" class="w-full h-auto rounded-lg">
+                                <!-- Demo Video 1 Placeholder -->
+                                <div class="relative w-full pt-[56.25%] rounded-lg bg-black/40 overflow-hidden shadow-inner border border-gray-600 group cursor-pointer">
+                                    <div class="absolute inset-0 flex flex-col items-center justify-center text-gray-400">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="mb-2 group-hover:text-white transition-colors"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                                        <span class="font-medium group-hover:text-white transition-colors">채팅 기능 시연 영상</span>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="rounded-lg bg-gray-700/50 p-4">
-                                <h5 class="font-semibold text-white">역할-특화 프롬프트 체인 (5-Chains)</h5>
-                                <p class="mt-2 text-sm text-gray-300 leading-relaxed">
-                                    '모드 분리' 아키텍처 하에서, 각자의 역할에 최적화된 5개의 전문 LangChain 체인을 프롬프트 엔지니어링으로 구현했습니다.
+
+                            <!-- Feature 2: Mock Exam -->
+                            <div class="rounded-lg bg-gray-700/50 p-6">
+                                <h5 class="text-lg font-semibold text-white mb-2">2. 실전 모의 시험 (Mock Exam)</h5>
+                                <p class="text-sm text-gray-300 leading-relaxed mb-4">
+                                    대화형 퀴즈의 한계를 넘어, 실제 시험 환경을 제공합니다. 사용자가 문제 수를 설정하면 AI가 PDF 내용을 바탕으로 문제를 사전에 생성합니다. 사용자가 답을 제출하면 AI의 정답과 비교하여 채점하고 피드백을 제공합니다.
                                 </p>
-                                <ul class="mt-2 list-disc list-inside space-y-1 text-sm text-gray-300 pl-4">
-                                    <li><strong>일반 답변 체인 (대화 모드):</strong> 답변 후 "'시험 모드'에서 퀴즈를 풀어보시겠어요?"라고 제안합니다.</li>
-                                    <li><strong>퀴즈 생성 체인 (시험 모드):</strong> [!!절대 지시!!] 프롬프트를 사용해 '예시 답안'이나 '정답'을 절대 유출하지 않고 질문만 생성하도록 강제했습니다.</li>
-                                    <li><strong>채점 체인 (시험 모드):</strong> correct / incorrect 단어만 출력하도록 template_grading을 설계하고, parse_grade 함수로 Python단에서 한 번 더 파싱하여 if grade == "correct": 로직의 안정성을 확보했습니다.</li>
-                                    <li><strong>소크라테스 체인 (시험 모드):</strong> 채점 결과가 incorrect일 때, 정답 대신 힌트성 역질문을 생성합니다.</li>
-                                    <li><strong>정답 체인 (시험 모드):</strong> 채점 결과가 correct일 때, 사용자를 칭찬하고 내용을 요약합니다.</li>
-                                </ul>
-                                <div class="mt-3 w-full rounded-lg bg-gray-600 flex items-center justify-center text-gray-400 text-sm font-medium shadow-inner">
-                                    <img src="backend2.png" alt="핵심 기능 2 스크린샷" class="w-full h-auto rounded-lg">
+                                <!-- Demo Video 2 Placeholder -->
+                                <div class="relative w-full pt-[56.25%] rounded-lg bg-black/40 overflow-hidden shadow-inner border border-gray-600 group cursor-pointer">
+                                    <div class="absolute inset-0 flex flex-col items-center justify-center text-gray-400">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="mb-2 group-hover:text-white transition-colors"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                                        <span class="font-medium group-hover:text-white transition-colors">모의 시험 시연 영상</span>
+                                    </div>
                                 </div>
                             </div>
+
+                            <!-- Feature 3: Flashcards -->
+                            <div class="rounded-lg bg-gray-700/50 p-6">
+                                <h5 class="text-lg font-semibold text-white mb-2">3. AI 암기 카드 (Smart Flashcards)</h5>
+                                <p class="text-sm text-gray-300 leading-relaxed mb-4">
+                                    PDF 파일의 방대한 내용을 AI가 핵심 요약하여 암기 카드로 변환해줍니다. 중요한 개념과 정의를 빠르게 복습할 수 있어 효율적인 학습을 돕습니다.
+                                </p>
+                                <!-- Demo Video 3 Placeholder -->
+                                <div class="relative w-full pt-[56.25%] rounded-lg bg-black/40 overflow-hidden shadow-inner border border-gray-600 group cursor-pointer">
+                                    <div class="absolute inset-0 flex flex-col items-center justify-center text-gray-400">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="mb-2 group-hover:text-white transition-colors"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                                        <span class="font-medium group-hover:text-white transition-colors">암기 카드 시연 영상</span>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
 
+                    <!-- My Role -->
                     <div class="mt-6">
                         <h4 class="text-xl font-semibold text-indigo-300">나의 역할 및 기여</h4>
                         <ul class="mt-2 list-disc list-inside space-y-1 text-gray-300 leading-relaxed">
                             <li>Python FastAPI 및 RAG 기반 백엔드 아키텍처 전체 설계</li>
-                            <li>React 프론트엔드 UI(파일 업로드, 채팅창, 모드 버튼) 개발 및 FastAPI API 연동</li>
-                            <li>'AI 의도 분류'의 근본적 한계(속도, 버그)를 파악하고, React의 useState와 FastAPI의 mode 인자를 연동하는 <strong>'UI-Driven State Management'</strong> 아키텍처를 도입하여 문제 해결</li>
-                            <li><strong>'듀얼 모델'</strong> 아키텍처 설계 (채팅용 gemma3:12b, 임베딩용 nomic-embed-text)를 통해 'embeddings' 오류 해결</li>
-                            <li>'시험 모드' 내부에서 작동하는 5-Chain(답변, 퀴즈, 채점, 정답, 역질문) 프롬프트 엔지니어링 및 안정적인 파싱 로직(parse_grade) 구현</li>
+                            <li>React 프론트엔드 UI(파일 업로드, 채팅, 모의 시험, 암기 카드) 개발 및 API 연동</li>
+                            <li>규칙 기반 로직의 경직성을 해결하기 위해, <strong>'의도 파악(Intent Recognition)'</strong> 알고리즘을 도입하여 튜터링의 유연성 확보</li>
+                            <li><strong>'듀얼 모델'</strong> 아키텍처 (gemma3:4b + nomic-embed-text) 최적화로 성능과 정확도 개선</li>
+                            <li>학습 효율을 극대화하기 위한 <strong>모의 시험</strong> 및 <strong>암기 카드 자동 생성</strong> 로직 구현</li>
                         </ul>
                     </div>
 
+                    <!-- Outcomes -->
                     <div class="mt-6">
                         <h4 class="text-xl font-semibold text-indigo-300">결과 및 성과</h4>
                         <ul class="mt-2 list-disc list-inside space-y-1 text-gray-300 leading-relaxed">
-                            <li>정적인 PDF 문서를 상호작용이 가능한 지능형 학습 교재로 성공적으로 변환.</li>
-                            <li>AI가 사용자의 의도를 '추측'하는 로직을 완전히 제거하고, UI로 '모드'를 명시적으로 받아 처리함으로써 '채점'과 '퀴즈 생성'이 섞이던 치명적인 버그를 100% 해결하고 시스템 안정성을 확보함.</li>
-                            <li>'대화 모드'에서는 불필요한 라우팅 로직을 건너뛰게 하여, 로컬 LLM 환경임에도 '일반 질문'의 응답 속도를 최적화함.</li>
-                            <li>모든 LLM 추론과 데이터 처리를 로컬(Ollama)에서 수행하여, 완전한 데이터 프라이버시를 보장하는 AI 애플리케이션을 구현함.</li>
+                            <li>정적인 PDF 문서를 상호작용이 가능한 지능형 학습 교재(모의고사, 암기장)로 성공적으로 변환.</li>
+                            <li>규칙 기반 처리에서 <strong>의도 파악</strong> 방식으로 전환하여, 사용자의 자연스러운 언어 입력에 대한 대응력을 높임.</li>
+                            <li><strong>gemma3:4b</strong> 경량 모델 도입으로 로컬 환경에서도 빠르고 효율적인 추론 속도 달성.</li>
+                            <li>모든 데이터 처리를 로컬(Ollama)에서 수행하여, 데이터 프라이버시를 완벽하게 보장.</li>
                         </ul>
                     </div>
 
+                    <!-- Retrospective -->
                     <div class="mt-6">
                         <h4 class="text-xl font-semibold text-indigo-300">회고 (Lessons Learned)</h4>
                         <div class="mt-4 rounded-lg bg-gray-900/50 p-4">
                             <h5 class="font-semibold text-white">배운 점</h5>
                             <ul class="mt-2 list-disc list-inside space-y-1 text-sm text-gray-300 leading-relaxed">
-                                <li>AI에게 사용자의 '의도'를 <strong>추측(Implicit Intent)</strong>하게 맡기는 것은 (모델 성능과 프롬프트에 상관없이) 본질적으로 불안정함을 깨달았습니다.</li>
-                                <li>사용자가 자신의 의도를 명확히 아는 경우(대화/시험), <strong>UI(버튼)를 통해 '명시적 상태(Explicit State)'</strong>를 직접 전달받아 백엔드 로직을 분기하는 것이 가장 빠르고, 안정적이며, 견고한 설계임을 깊이 이해했습니다.</li>
+                                <li>초기에는 명확한 규칙(Rule)이 안정적이라 생각했지만, 사용자 경험 측면에서 유연한 '의도 파악'이 필수적임을 깨달았습니다. 적절한 프롬프트 엔지니어링을 통해 경량 모델로도 충분한 의도 파악이 가능함을 확인했습니다.</li>
+                                <li>학습 도구로서 단순 채팅보다는 '시험'과 '암기' 같은 명확한 구조화된 기능이 사용자에게 더 큰 효능감을 준다는 것을 배웠습니다.</li>
                             </ul>
                         </div>
                         <div class="mt-4 rounded-lg bg-gray-900/50 p-4">
                             <h5 class="font-semibold text-white">개선점</h5>
                             <ul class="mt-2 list-disc list-inside space-y-1 text-sm text-gray-300 leading-relaxed">
-                                <li>현재 대화 기록이 브라우저 새로고침 시 초기화됩니다. <strong>localStorage</strong>를 도입하여 대화 기록을 브라우저에 영구 저장하고 싶습니다.</li>
-                                <li>PDF 내의 표(Table)나 이미지(Image)를 인식하지 못하는 한계가 있어, 향후 멀티모달(Multi-modal) 임베딩을 도입하여 RAG의 검색 범위를 확장하고 싶습니다.</li>
+                                <li>현재 대화 기록 및 오답 노트가 브라우저 새로고침 시 초기화됩니다. <strong>localStorage</strong>를 도입하여 데이터를 영구 저장하고 싶습니다.</li>
+                                <li>향후 멀티모달(Multi-modal) 임베딩을 도입하여 PDF 내 표와 이미지까지 학습 자료로 활용할 수 있도록 개선하고 싶습니다.</li>
                             </ul>
                         </div>
                     </div>
@@ -231,6 +271,7 @@
             </div>
         </section>
 
+        <!-- Footer -->
         <footer class="mt-16 border-t border-gray-700 pt-8 text-center text-gray-500">
             <p>&copy; 2024 정지훈. All rights reserved.</p>
         </footer>
@@ -239,4 +280,3 @@
 
 </body>
 </html>
-
